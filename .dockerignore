@@ -1,0 +1,49 @@
+# Bytecode and Python environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv
+venv/
+env/
+ENV/
+.Python
+
+# Local development files
+*.log
+*.db
+*.sqlite3
+.DS_Store
+
+# Virtual environment and IDE config
+.idea/
+.vscode/
+*.swp
+
+# OS files
+Thumbs.db
+ehthumbs.db
+
+# Git
+.git
+.gitignore
+
+# Node-related (in case you're using npm for assets)
+node_modules/
+npm-debug.log
+
+# Docker-related
+Dockerfile
+.dockerignore
+
+# Secrets (never include credentials in Docker image!)
+.env
+*.key
+*.pem
+
+# Test files
+tests/
+__tests__/
+*.test.*
+coverage/
