@@ -123,5 +123,37 @@
   },
   "certifications": [
     "AWS Certified Solutions Architect – Associate"
+  ],
+  "projects": [
+    {
+      "name": "Promptfolia",
+      "description": "A serverless web application deployed on Google Cloud Run that leverages Generative AI APIs to deliver contextual prompts. Built using Python (Flask), the app integrates with Google Generative AI and is fully containerized using Docker. Deployed with GitHub Actions CI/CD, with the container image pushed to GCP Artifact Registry and auto-deployed to Cloud Run. Infrastructure authenticated and managed using service account credentials.",
+      "technologies": ["Python", "Flask", "Google Cloud Run", "Google Artifact Registry", "Docker", "GitHub Actions", "Google Generative AI", "Terraform (planned)"],
+      "cloud": ["GCP"]
+    },
+    {
+      "name": "Multi-Cloud 3-Tier Infrastructure Deployment with Terraform",
+      "description": "Designed and implemented a reusable Terraform module to deploy a 3-tier architecture (web, app, and DB layers) across AWS, Azure, and GCP. It included secure networking, VM provisioning, and automated resource management for each platform.",
+      "technologies": ["Terraform", "AWS EC2/VPC", "Azure VM/VNet", "GCP Compute Engine/VPC"],
+      "cloud": ["AWS", "Azure", "GCP"]
+    },
+    {
+      "name": "AskPDF - AI-Powered PDF Query System",
+      "description": "Built an AI-powered document querying application that allows users to ask questions from uploaded PDFs. It uses OpenAI LLMs and FAISS vector search for semantic retrieval. Deployed backend services on AWS.",
+      "technologies": ["Python", "FastAPI", "OpenAI API", "FAISS", "Docker", "AWS EC2"],
+      "cloud": ["AWS"]
+    },
+    {
+      "name": "Legacy Website Cloud Migration",
+      "description": "Led the migration of a legacy on-prem corporate website to AWS, Azure, and GCP for a multinational client. Ensured high availability, cost optimization, and operational visibility using cloud-native services.",
+      "technologies": ["Terraform", "CloudFormation", "Azure ARM", "GCP Deployment Manager"],
+      "cloud": ["AWS", "Azure", "GCP"]
+    },
+    {
+      "name": "CI/CD & Monitoring Platform Integration",
+      "description": "Created and integrated scalable CI/CD pipelines using Jenkins, Docker, and Kubernetes. Deployed real-time monitoring using Prometheus, Grafana, and Loki to ensure availability and observability.",
+      "technologies": ["Jenkins", "Docker", "Kubernetes", "Prometheus", "Grafana", "Loki"],
+      "cloud": ["AWS", "Azure"]
+    }
   ]
 }
