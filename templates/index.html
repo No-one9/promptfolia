@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Promptfolia</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1d1d1f;
+            letter-spacing: -0.5px;
+        }
+
+        .chat-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .chat-question {
+            align-self: flex-end;
+            background-color: #f1f2f4;
+            color: #000;
+            padding: 12px 16px;
+            border-radius: 18px;
+            max-width: 75%;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .chat-answer {
+            align-self: flex-start;
+            background-color: #f9fafa;
+            color: #1d1d1f;
+            padding: 12px 16px;
+            border-radius: 18px;
+            border-left: 4px solid #0077b6;
+            max-width: 75%;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        textarea {
+            flex: 1;
+            padding: 14px 20px;
+            font-size: 14px;
+            border-radius: 999px;
+            border: 1px solid #ccc;
+            resize: none;
+            height: 48px;
+            line-height: 20px;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
+        }
+
+        textarea:focus {
+            border-color: #0077b6;
+            outline: none;
+        }
+
+        button {
+            background-color: #0077b6;
+            color: #fff;
+            padding: 0 20px;
+            height: 48px;
+            border: none;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        button:hover {
+            background-color: #005f8d;
+        }
+    </style>
+    <script>
+        function toggleSidebar(e) {
+            e.stopPropagation();
+            document.getElementById('sidebar').classList.toggle('expanded');
+        }
+    </script>
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 60px;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            transition: width 0.3s ease, padding-left 0.3s ease;
+            z-index: 1000;
+            overflow: hidden;
+        }
+
+        .sidebar.expanded {
+            width: 200px;
+            align-items: flex-start;
+            padding-left: 12px;
+        }
+
+        .sidebar-toggle {
+            margin-bottom: 30px;
+            font-size: 20px;
+            cursor: pointer;
+            color: #444;
+            align-self: flex-start;
+            padding-left: 12px;
+        }
+
+        .sidebar-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: background 0.2s ease, padding 0.3s ease;
+            padding: 10px 10px 10px 12px;
+            border-radius: 8px;
+            width: 100%;
+            color: #1a1a1a;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .sidebar-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .sidebar-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            vertical-align: middle;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #333;
+            display: inline-block;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .sidebar.expanded .label {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-toggle" onclick="toggleSidebar(event)"><img src="/static//menu.svg" alt="menu icon"></div>
+        <a class="sidebar-item" href="/static/resume.pdf" target="_blank">
+            <img src="/static/resume-icon.svg" alt="Resume Icon" />
+            <span class="label">View Resume</span>
+        </a>
+        <a class="sidebar-item" href="https://linkedin.com/in/lokesh-ch" target="_blank">
+            <img src="/static/linkedin-icon.svg" alt="LinkedIn Icon" />
+            <span class="label">Hey Let's Connect</span>
+        </a>
+    </div>
+    <div class="container">
+        <h1>Lokesh's promptfolia<br>Prompt + Portfolio</h1>
+
+        <!-- Chat box -->
+        <div class="chat-box">
+            {% for chat in chat_history %}
+            <div class="chat-question">{{ chat.question }}</div>
+            <div class="chat-answer">{{ chat.answer }}</div>
+            {% endfor %}
+        </div>
+
+        <!-- Disclaimer below chat, above input form -->
+        <p style="font-size: 13px; color: #666; margin: 0 0 12px 0; text-align: center;">
+            This AI assistant provides professional insights based on my profile. For the most accurate info, please check my <a href="/static/resume.pdf" target="_blank" style="color: #0077b6;">resume</a> or <a href="https://linkedin.com/in/lokesh-ch" target="_blank" style="color: #0077b6;">connect with me on LinkedIn</a>.
+        </p>
+
+        <!-- Input form -->
+        <form method="POST">
+            <textarea name="question" placeholder="Ask a professional question about Lokesh..."
+                required>{{ last_question }}</textarea>
+            <div style="display: flex; gap: 8px;">
+                <button type="submit">Get Answer</button>
+                <button type="button" onclick="window.location.href='/export'">Export Chat</button>
+                <button type="button" onclick="clearChat()">Clear Chat</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function clearChat() {
+            // Instantly clear chat UI
+            const chatBox = document.querySelector(".chat-box");
+            if (chatBox) chatBox.innerHTML = "";
+
+            // Clear session history silently
+            fetch("/clear", { method: "POST" });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const textarea = document.querySelector("form textarea");
+            const form = document.querySelector("form");
+
+            textarea.addEventListener("keydown", function (event) {
+                if (event.key === "Enter" && !event.shiftKey) {
+                    event.preventDefault();
+                    form.requestSubmit();
+                }
+            });
+
+            const chatBox = document.querySelector(".chat-box");
+            if (chatBox) {
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        });
+    </script>
+</body>
+<footer>
+    <p>Copyright &#169; 2025 Lokesh Cherukuri. All Rights Reserved.</p>
+</footer>
+
+</html>
