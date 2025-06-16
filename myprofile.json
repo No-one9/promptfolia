@@ -1,159 +1,123 @@
 {
-    "name": "Narasinga Lokesh Cherukuri",
-    "education":[{
-        "degree": "Master's Degree",
-        "field": "Computer Science",
-        "institution": "University of Central Missouri",
-        "start-year": "2023",
-        "end-year": "2025",
-        "graduated": "yes",
-        "GPA": "3.6"
+  "name": "Narasinga Lokesh Cherukuri",
+  "title": "Cloud & DevOps Engineer | Platform & Site Reliability Specialist",
+  "email": "nlokesh.cherukuri@gmail.com",
+  "phone": "+1-913-238-8333",
+  "location": "United States (Open to relocation)",
+  "linkedin": "https://linkedin.com/in/lokesh-ch",
+  "github": "https://github.com/No-one9",
+  "portfolio": "https://promptfolia.web.app",
+  "summary": "Versatile Cloud and DevOps Engineer with 4+ years of professional experience in designing scalable cloud infrastructure, automating CI/CD pipelines, and improving system reliability across AWS, Azure, and GCP. Known for delivering resilient platforms, migrating legacy systems to modern cloud-native stacks, and driving cost optimization through automation and observability. Master’s in CS, strong startup exposure, and proven leadership on multi-cloud projects.",
+  "education": [
+    {
+      "degree": "Master of Science",
+      "field": "Computer Science",
+      "institution": "University of Central Missouri",
+      "start_year": "2023",
+      "end_year": "2025",
+      "graduated": "yes",
+      "GPA": "3.6"
     },
     {
-        "degree": "Bachelor's Degree",
-        "field": "Computer Science",
-        "institution": "Gandhi Institute of Technology And Management",
-        "start-year": "2016",
-        "end-year": "2020",
-        "graduated": "yes",
-        "GPA": "8.02"
-    }],
-    "experience":[
-        {
-        "role": "Senior Software Engineer - Cloud and DevOps Consultant",
-        "company": "ValueLabs",
-        "duration": " 12/2020 - 07/2023",
-        "responsibilities": [
-            "Designed and deployed high-availability AWS architectures, ensuring 99.9% uptime for mission-critical applications",
-            "Built and optimized CI/CD pipelines using Jenkins, Docker, and Kubernetes, enabling seamless real-time deployments and eliminating manual bottlenecks.",
-            "Automated infrastructure provisioning and configuration management with Ansible and Terraform, significantly enhancing deployment consistency and speed.",
-            "Initiated and Led a cost-optimization strategy achieving substantial savings by implementing reserved instances, right-sizing, and auto-scaling best practices.",
-            "Enforced security and compliance standards across AWS environments by managing IAM roles, security groups, and centralized logging solutions.",
-            "Simplified cloud deployments on AWS by automating processes with Terraform and CloudFormation, making it easier and faster to manage infrastructure and resources like EC2, S3, and RDS.",
-            "Architected and deployed comprehensive monitoring and alerting systems using Prometheus, Grafana, and CloudWatch, ensuring proactive incident response.",
-            "Designed a resilient and scalable cloud infrastructure on AWS with auto-scaling and load balancing strategies, ensuring system stability during high traffic periods. Validated architecture reliability using AWS Fault Injection Simulator.",
-            "Led cross-functional collaboration, driving timely and efficient delivery of cloud-based solutions across multiple projects.",
-            "Led containerization and orchestration initiatives using Docker and Kubernetes across both cloud and on-premises environments.",
-            "Successfully migrated a legacy on-premises corporate website to AWS for a multinational client, enhancing availability and reducing operational overhead.",
-            "Built a robust cloud environment tailored for a machine learning platform, ensuring high availability and performance for end-user access.",
-            "Investigated and resolved cloud service incidents through detailed root cause analysis, ensuring rapid restoration of services and ongoing reliability.",
-            "Delivered 24X7 infrastructure support, continuously monitoring system health and maintaining comprehensive documentation for deployment, configuration, and troubleshooting processes.",
-            "Engineered and led technical initiatives for automating system engineering efforts, significantly improving the reliability, scalability, and observability of global cloud infrastructure on AWS and Azure, including defining and monitoring Service Level Objectives (SLOs).",
-            "Developed and maintained robust software, tooling, and automations (Python, Bash, Ansible, Terraform) to scale global platform infrastructure, supporting rapid growth for SaaS products and ensuring high availability.",
-            "Acted as a subject matter expert for Cloud and DevOps related issues, advising internal teams on secure design patterns, data protection strategies, and identity and access management best practices.",
-            "Acted as a subject matter expert for AWS, advising internal teams on secure design patterns, data protection strategies, and identity and access management best practices.",
-            "Designed a resilient and scalable cloud infrastructure on AWS with auto-scaling and load balancing strategies, ensuring system stability during high traffic periods. Validated architecture reliability using AWS Fault Injection Simulator.",
-            "Successfully migrated a legacy on-premises corporate website to Azure, AWS, GCP for a multinational client, enhancing availability and reducing operational overhead.",
-            "Engineered and maintained DevSecOps workflows within CI/CD pipelines, integrating security scanning tools and automated testing to minimize vulnerabilities, ensure compliance, and uphold software quality.",
-            "build a cloud infra and automated the deployment of a large machine learning model in cloud with high availability and reliability and resilient to everything."
-        ]
-    },{
-        "role": "Software Engineer",
-        "company": "ValueLabs",
-        "duration": "06/2020 - 12/2020",
-        "responsibilities": [
-            "Developed and deployed scalable, cloud-native applications using the MEAN stack (MongoDB, Express.js, Angular, Node.js) and AWS services, contributing to customer-facing projects.",
-            "Automated environment provisioning and software deployments using Azure DevOps, reducing manual effort by 75% and improving deployment consistency.",
-            "Contributed to the development and maintenance of monitoring solutions using Azure Monitor, providing early warnings for system issues and participating in incident resolution.",
-            "Contributed to the deployment and management of cloud infrastructure on AWS, Azure, GCP , focusing on compute, storage, and networking for various applications.",
-            "Gained hands-on experience with Kubernetes for container orchestration, including deployment, scaling, and monitoring of containerized applications.",
-            "Automated infrastructure provisioning and configuration management using Terraform and Ansible.",
-            "Supported CI/CD processes and utilized monitoring tools like Prometheus, ELK Stack, and cloud-native solutions CloudWatch, Azure Monitor to ensure system health.",
-            "Developed automation scripts using Python and Bash to streamline operational tasks.",
-            "Optimized database queries and caching strategies, improving API response times by 40%.",
-            "Developed and deployed cloud-native applications using AWS, Node.js, and MongoDB, enhancing scalability and performance."
-        ]
-    },{
-        "role":"software Developer Intern",
-        "company": "ValueLabs",
-        "duaration": "12/2019 - 03/2020",
-        "responsibilities":[
-            "Build corporate internal applications as a MEAN Stack developer",
-            "Assisted in cloud-based application development, implementing serverless architectures using AWS Lambda.",
-            "Automated AWS CloudWatch alerts for proactive system monitoring and troubleshooting."
-        ]
-    },{
-        "role": "Machine Learning Intern",
-        "company": "Grepthor Software Solutions",
-        "duration": "05/2019 - 07/2019",
-        "responsibilities":[
-            "Built machine learning models and deployed models on AWS EC2 and lambda for scalable inference.",
-            "Performed data preprocessing and visualization to enhance model performance, resulting in noticeably higher prediction accuracy and reliability."
-        ]
-    }],
-  "skills": {
-    "cloud_platforms_and_infrastructure": {
-      "aws": ["EC2", "EKS", "ECS", "S3", "Lambda", "CloudFormation", "IAM", "Route53", "RDS", "ELB", "CloudFront", "AWS FIS", "CloudWatch", "AWS Organizations"],
-      "azure": ["VMs", "VNet", "AKS", "Azure Functions", "Azure DevOps", "Azure AD"],
-      "gcp": ["Compute Engine", "GKE", "Cloud Functions", "Cloud SQL", "Cloud Monitoring"],
-      "infrastructure_as_code": ["Terraform", "Pulumi", "Ansible (Playbooks, Roles)", "Chef"],
-      "networking": ["TCP/IP", "DNS", "Firewalls", "VPN", "Load Balancers", "CDN", "VPC Peering", "Subnets", "Route Tables", "Security Groups", "WAF", "NAT Gateways"],
-      "operating_systems": ["Linux (Ubuntu, CentOS, RHEL)", "Windows Server"],
-      "virtualization": ["VMware", "VirtualBox"]
-    },
-    "ci_cd_automation_devops": {
-      "ci_cd_tools": ["Jenkins", "GitHub Actions", "GitLab CI/CD", "Azure DevOps", "CircleCI"],
-      "version_control": ["Git", "GitHub", "GitLab", "Bitbucket"],
-      "build_tools": ["Maven", "Gradle", "npm", "Yarn"],
-      "scripting_and_programming": ["Python", "Bash", "Node.js", "JavaScript", "TypeScript", "Go", "Angular"],
-      "automation_practices": ["Automated Testing", "Deployment Pipelines", "Infrastructure Provisioning"],
-      "devops_practices": ["Release Management", "Configuration Management", "Deployment Strategies (Blue/Green, Canary, Rolling Updates)", "GitOps", "Agile/Scrum Methodologies"]
-    },
-    "containerization_and_orchestration": {
-      "containers": ["Docker", "Docker Compose"],
-      "orchestration": ["Kubernetes (EKS, AKS, GKE, Self-managed)", "Helm Charts", "Kustomize"],
-      "service_mesh_networking": ["Istio", "Ingress Controllers", "Traefik", "NGINX Ingress"]
-    },
-    "monitoring_logging_operations": {
-      "observability_tools": ["Prometheus", "Grafana", "Loki", "ELK Stack", "Datadog", "Splunk", "AWS CloudWatch"],
-      "operational_practices": ["Monitoring Architecture Design", "Logging & Metrics Management", "Alerting & Notifications", "Incident Management & Response", "Postmortems & RCA", "Chaos Engineering (AWS FIS)"],
-      "reliability_engineering": ["SLO/SLI Definition & Tracking", "Error Budgeting", "High Availability Systems", "Disaster Recovery Plans (DR)"]
-    },
-    "databases_and_messaging": {
-      "relational_databases": ["PostgreSQL", "MySQL", "Amazon Aurora", "Cloud SQL"],
-      "nosql_databases": ["MongoDB", "DynamoDB", "Redis", "Elasticsearch"],
-      "messaging_and_streaming": ["Kafka", "RabbitMQ", "AWS SQS", "AWS SNS"]
-    },
-    "security_and_compliance": {
-      "cloud_security": ["IAM Best Practices", "RBAC Policies", "MFA Implementation", "Secrets Management (Vault, AWS Secrets Manager)", "Secure Network Design"],
-      "application_security": ["Vulnerability Scanning & Management", "Threat Modeling Basics", "OWASP Awareness"],
-      "compliance_awareness": ["SOC 2 Principles", "ISO 27001 Basics", "Microsoft Cloud Background Check Readiness"]
-    },
-    "additional_skills": ["Problem Solving & Troubleshooting", "Collaboration & Communication", "Continuous Learning & Adaptability"]
-  },
+      "degree": "Bachelor of Technology",
+      "field": "Computer Science",
+      "institution": "Gandhi Institute of Technology and Management",
+      "start_year": "2016",
+      "end_year": "2020",
+      "graduated": "yes",
+      "GPA": "8.02"
+    }
+  ],
   "certifications": [
     "AWS Certified Solutions Architect – Associate"
   ],
+  "experience": [
+    {
+      "company": "ValueLabs",
+      "roles": [
+        {
+          "title": "Senior Software Engineer – Cloud and DevOps Consultant",
+          "duration": "12/2020 – 07/2023",
+          "clients": ["United Airlines", "Unknot.id", "Vittoria Coffee"],
+          "highlights": [
+            "Re-architected on-prem legacy systems to modern AWS infrastructure using EKS, Terraform, and CI/CD pipelines for Vittoria Coffee.",
+            "Led cloud migration and observability for United Airlines using Azure and Prometheus, Grafana, and ELK Stack.",
+            "Built multi-cloud DevOps pipelines integrating Jenkins, GitLab, ArgoCD, and Terraform for hybrid deployments.",
+            "Defined SLOs, built chaos engineering practices with AWS FIS, and acted as SME for DevSecOps practices.",
+            "Containerized and orchestrated large-scale apps using Docker and Kubernetes across AWS, Azure, and GCP.",
+            "Enabled ML infrastructure automation and high-availability deployments for AI workloads on AWS."
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "duration": "06/2020 – 12/2020",
+          "highlights": [
+            "Developed MEAN stack applications with cloud-native architecture on AWS.",
+            "Implemented CI/CD using Azure DevOps and GitHub Actions.",
+            "Contributed to Kubernetes-based deployments and infrastructure monitoring.",
+            "Built automations using Bash, Python, and Terraform to support cloud environments."
+          ]
+        },
+        {
+          "title": "Software Developer Intern",
+          "duration": "12/2019 – 03/2020",
+          "highlights": [
+            "Worked on internal tooling using MEAN stack.",
+            "Implemented AWS Lambda-based automation for alerting and monitoring."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Grepthor Software Solutions",
+      "title": "Machine Learning Intern",
+      "duration": "05/2019 – 07/2019",
+      "highlights": [
+        "Deployed ML models on AWS Lambda for scalable inference.",
+        "Improved accuracy with advanced preprocessing and visualization pipelines."
+      ]
+    }
+  ],
+  "skills": {
+    "cloud": ["AWS", "Azure", "GCP"],
+    "containers": ["Docker", "Kubernetes", "Helm", "Kustomize"],
+    "IaC": ["Terraform", "Pulumi", "CloudFormation", "Azure ARM", "Ansible"],
+    "CI/CD": ["Jenkins", "GitLab CI", "GitHub Actions", "Azure DevOps", "ArgoCD"],
+    "scripting": ["Python", "Bash", "JavaScript", "TypeScript", "Node.js"],
+    "monitoring": ["Prometheus", "Grafana", "Loki", "ELK Stack", "Datadog", "Splunk", "CloudWatch", "Azure Monitor"],
+    "networking": ["VPC", "VPN", "Subnets", "Route Tables", "Load Balancer", "CDN", "DNS", "Security Groups"],
+    "security": ["IAM", "RBAC", "Vault", "Secrets Manager", "SAST/DAST Scanning", "DevSecOps"],
+    "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", "Cloud SQL"],
+    "messaging": ["Kafka", "RabbitMQ", "AWS SQS/SNS"],
+    "tools": ["Git", "Maven", "Gradle", "npm", "Yarn", "Visual Studio Code", "Postman"],
+    "soft_skills": ["Problem Solving", "Incident Response", "Collaboration", "Mentorship", "Client Communication"]
+  },
   "projects": [
     {
       "name": "Promptfolia",
-      "description": "A serverless web application deployed on Google Cloud Run that leverages Generative AI APIs to deliver contextual prompts. Built using Python (Flask), the app integrates with Google Generative AI and is fully containerized using Docker. Deployed with GitHub Actions CI/CD, with the container image pushed to GCP Artifact Registry and auto-deployed to Cloud Run. Infrastructure authenticated and managed using service account credentials.",
-      "technologies": ["Python", "Flask", "Google Cloud Run", "Google Artifact Registry", "Docker", "GitHub Actions", "Google Generative AI", "Terraform (planned)"],
-      "cloud": ["GCP"]
+      "description": "An AI-powered interactive resume deployed on Google Cloud Run with Flask backend and Docker. It uses Google Generative AI to answer recruiter queries about your resume in real-time.",
+      "tech": ["Flask", "Docker", "GCP Cloud Run", "GitHub Actions", "Google GenAI"],
+      "value": "Tripled recruiter engagement and improved portfolio clarity."
     },
     {
-      "name": "Multi-Cloud 3-Tier Infrastructure Deployment with Terraform",
-      "description": "Designed and implemented a reusable Terraform module to deploy a 3-tier architecture (web, app, and DB layers) across AWS, Azure, and GCP. It included secure networking, VM provisioning, and automated resource management for each platform.",
-      "technologies": ["Terraform", "AWS EC2/VPC", "Azure VM/VNet", "GCP Compute Engine/VPC"],
-      "cloud": ["AWS", "Azure", "GCP"]
+      "name": "Multi-Cloud 3-Tier Infrastructure",
+      "description": "Built reusable Terraform modules to deploy secure 3-tier architectures (web/app/db) across AWS, Azure, and GCP with cost-optimized networking and VM provisioning.",
+      "tech": ["Terraform", "EC2", "VMs", "GCP Compute Engine"]
     },
     {
-      "name": "AskPDF - AI-Powered PDF Query System",
-      "description": "Built an AI-powered document querying application that allows users to ask questions from uploaded PDFs. It uses OpenAI LLMs and FAISS vector search for semantic retrieval. Deployed backend services on AWS.",
-      "technologies": ["Python", "FastAPI", "OpenAI API", "FAISS", "Docker", "AWS EC2"],
-      "cloud": ["AWS"]
+      "name": "AskPDF – AI Document Query System",
+      "description": "Developed a tool to query PDF content using OpenAI and FAISS vector DB. Deployed on AWS with Docker and FastAPI.",
+      "tech": ["FastAPI", "Docker", "FAISS", "OpenAI", "AWS"]
     },
     {
-      "name": "Legacy Website Cloud Migration",
-      "description": "Led the migration of a legacy on-prem corporate website to AWS, Azure, and GCP for a multinational client. Ensured high availability, cost optimization, and operational visibility using cloud-native services.",
-      "technologies": ["Terraform", "CloudFormation", "Azure ARM", "GCP Deployment Manager"],
-      "cloud": ["AWS", "Azure", "GCP"]
+      "name": "Legacy Website Migration",
+      "description": "Migrated on-prem corporate sites to cloud (AWS, Azure, GCP) with HA architecture, DNS migration, and observability dashboards.",
+      "tech": ["Terraform", "CloudFormation", "Azure ARM", "ELK"]
     },
     {
-      "name": "CI/CD & Monitoring Platform Integration",
-      "description": "Created and integrated scalable CI/CD pipelines using Jenkins, Docker, and Kubernetes. Deployed real-time monitoring using Prometheus, Grafana, and Loki to ensure availability and observability.",
-      "technologies": ["Jenkins", "Docker", "Kubernetes", "Prometheus", "Grafana", "Loki"],
-      "cloud": ["AWS", "Azure"]
+      "name": "CI/CD & Monitoring Platform",
+      "description": "Implemented GitOps-based CI/CD pipelines and integrated observability using Prometheus, Grafana, and Loki for real-time insights and availability.",
+      "tech": ["Jenkins", "GitHub Actions", "ArgoCD", "Grafana", "Loki", "Kubernetes"]
     }
   ]
 }
